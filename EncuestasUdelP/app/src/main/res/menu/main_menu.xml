@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/itmRealizarEncuesta"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never"
+        android:title="@string/txtRealizarEncuesta"
+        />
+    <item android:id="@+id/itmMisEncuestas"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never"
+        android:title="@string/txtMisEncuestas"
+        />
+    <item android:id="@+id/itmEliminarEncuesta"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never"
+        android:title="@string/txtEliminarEncuesta"
+        />
+    <item android:id="@+id/itmEditarEncuesta"
+        android:icon="@mipmap/ic_launcher"
+        app:showAsAction="never"
+        android:title="@string/txtEditarEncuesta"
+        />
+</menu>

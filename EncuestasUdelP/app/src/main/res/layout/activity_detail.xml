@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txvDetalleEncuesta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/txtDetalleEncuesta"
+
+                android:textSize="40sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txvEncuesta"
+                android:layout_width="110dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:layout_marginEnd="250dp"
+
+                android:ems="8"
+                android:text="@string/txtEncuesta"
+
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvDetalleEncuesta" />
+
+            <TextView
+                android:id="@+id/txvNumeroEncuesta"
+                android:layout_width="35dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="180dp"
+
+                android:ems="8"
+                android:hint="@string/hintNumero"
+
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.641"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvDetalleEncuesta" />
+
+            <TextView
+                android:id="@+id/txvNombreDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+
+                android:ems="8"
+                android:hint="@string/hintNombre"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvEncuesta" />
+
+            <TextView
+                android:id="@+id/txvApellidoPaternoDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:ems="10"
+                android:hint="@string/hintApellidoPaterno"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvNombreDetalle" />
+
+            <TextView
+                android:id="@+id/txvApellidoMaternoDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:ems="10"
+                android:hint="@string/hintApellidoMaterno"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvApellidoPaternoDetalle" />
+
+            <TextView
+                android:id="@+id/txvCorreoDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:ems="10"
+                android:hint="@string/hintCorreo"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvApellidoMaternoDetalle" />
+
+            <TextView
+                android:id="@+id/txvGeneroDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/hintGenero"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvCorreoDetalle" />
+
+            <TextView
+                android:id="@+id/txvViajadoDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/hintViajado"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvGeneroDetalle" />
+
+            <TextView
+                android:id="@+id/txvFrecuenciaDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/hintFrecuencia"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvViajadoDetalle" />
+
+            <TextView
+                android:id="@+id/txvExperienciaDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/hintExperiencia"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvFrecuenciaDetalle" />
+
+
+            <TextView
+                android:id="@+id/txvEsquemaDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+
+                android:orientation="horizontal"
+                android:hint="@string/txtEsquema"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvExperienciaDetalle" />
+
+            <TextView
+                android:id="@+id/txvServicioDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/txtServicio"
+
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvEsquemaDetalle" />
+
+            <TextView
+                android:id="@+id/txvMejorasDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+
+                android:ems="10"
+                android:hint="@string/hintMejora"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvServicioDetalle" />
+
+            <TextView
+                android:id="@+id/txvOfertasDescuentosDetalle"
+                android:layout_width="300dp"
+                android:layout_height="38dp"
+                android:layout_marginTop="5dp"
+
+                android:hint="@string/txtOfertas"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txvMejorasDetalle" />
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</LinearLayout>
