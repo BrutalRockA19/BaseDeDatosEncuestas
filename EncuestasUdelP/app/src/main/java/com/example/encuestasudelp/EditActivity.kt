@@ -131,9 +131,9 @@ class EditActivity : AppCompatActivity() {
                                 //   misencuestas.agregarEncuesta()
                                 //Toast.makeText(this@RealizarEncuestaActivity,"Se guardo el estudiante ${miencuesta}",Toast.LENGTH_SHORT).show()
                                 Log.d("udelp", miencuesta.correo)
-                                if (swtOfertasDescuentos.isChecked) {
-                                    miencuesta.ofertas = true
-                                }
+                               
+                                    miencuesta.ofertas = swtOfertasDescuentos.isChecked
+
                                 miencuesta.mejora = edtMejorar.text.toString()
 
                                 if (position != null) {

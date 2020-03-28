@@ -18,7 +18,7 @@ class EncuestasDb {
 
     fun  encuestasAdd(Encuesta: EntityEncuesta): Long{
         sqliteDataBase = connectionDb.openConnection(ConnectionDb.MODE_WRITE)
-
+        var ofertasB = 0
         val values = ContentValues()
         values.put(NombreE,Encuesta.nombre)
         values.put(ApellidoP_E,Encuesta.ApellidoPaterno)
@@ -33,6 +33,9 @@ class EncuestasDb {
         values.put(Promo_E,Encuesta.promo)
         values.put(Servicio_E,Encuesta.servicio)
         values.put(Mejora_E,Encuesta.mejora)
+        if ((Encuesta.ofertas) == true ){
+            ofertasB = 1
+        }
         values.put(Ofertas_E,Encuesta.ofertas)
         values.put(UserId_E,Encuesta.user)
         values.put(Date_E,Encuesta.date)
@@ -43,7 +46,10 @@ class EncuestasDb {
     fun  encuestasEdit(Encuesta: EntityEncuesta): Int {
 
         sqliteDataBase = connectionDb.openConnection(ConnectionDb.MODE_WRITE)
-
+        var ofertasB = 0
+        var ejecutivab =0
+        var economicab= 0
+        var promob = 0
         val values = ContentValues()
         values.put(NombreE,Encuesta.nombre)
         values.put(ApellidoP_E,Encuesta.ApellidoPaterno)
@@ -53,14 +59,29 @@ class EncuestasDb {
         values.put(Viajado_E,Encuesta.viajado)
         values.put(Frecuencia_E,Encuesta.frecuencia)
         values.put(Experiencia_E,Encuesta.experiencia)
-        values.put(Ejecutiva_E,Encuesta.ejecutiva)
-        values.put(Economica_E,Encuesta.economica)
-        values.put(Promo_E,Encuesta.promo)
+        if ((Encuesta.ejecutiva) == true){
+            ejecutivab = 1
+        }
+        values.put(Ejecutiva_E,ejecutivab)
+        if((Encuesta.economica)==true){
+            economicab  == 1
+        }
+        values.put(Economica_E,economicab)
+        if((Encuesta.promo)==true){
+            promob  == 1
+        }
+        values.put(Promo_E,promob)
         values.put(Servicio_E,Encuesta.servicio)
         values.put(Mejora_E,Encuesta.mejora)
-        values.put(Ofertas_E,Encuesta.ofertas)
+
+       if ((Encuesta.ofertas) == true ){
+           ofertasB = 1
+       }
+        values.put(Ofertas_E,ofertasB)
+
         values.put(UserId_E,Encuesta.user)
         values.put(Date_E,Encuesta.date)
+
         var selection = "Id=?"
         var args = arrayOf(Encuesta.id.toString())
 
